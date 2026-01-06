@@ -10,7 +10,11 @@ type Module = {
 };
 
 const fetchMarkdown = async (filePath: string): Promise<string> => {
-  const response = await fetch(filePath);
+  // Use import.meta.env.BASE_URL for correct base in production
+  const base = import.meta.env.BASE_URL || '/';
+  // Ensure no double slash
+  const url = base.replace(/\/$/, '') + '/' + filePath.replace(/^\//, '');
+  const response = await fetch(url);
   const text = await response.text();
   // If the response is HTML (likely a 404), show a friendly error
   if (text.startsWith('<!DOCTYPE html>') || text.startsWith('<html')) {
