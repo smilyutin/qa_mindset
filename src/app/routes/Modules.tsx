@@ -18,8 +18,8 @@ const Modules: React.FC = () => {
   });
 
   return (
-    <div style={{ width: '100vw', minHeight: '100vh', background: 'linear-gradient(120deg, #f1f5f9 60%, #e0e7ff 100%)', padding: '40px 4vw 60px 4vw', boxSizing: 'border-box', fontFamily: 'Inter, system-ui, Avenir, Helvetica, Arial, sans-serif' }}>
-      <h1 style={{ textAlign: 'left', marginBottom: 36, fontSize: 38, fontWeight: 800, color: '#3730a3', letterSpacing: '-1px' }}>QA Mindset</h1>
+    <div style={{ width: '100vw', minHeight: '100vh', background: 'linear-gradient(120deg, #f1f5f9 60%, #e0e7ff 100%)', padding: '40px 4vw 60px 4vw', boxSizing: 'border-box', fontFamily: 'Inter, system-ui, Avenir, Helvetica, Arial, sans-serif', color: '#1e293b' }}>
+      <h1 style={{ textAlign: 'left', marginBottom: 36, fontSize: 38, fontWeight: 800, color: '#1e293b', letterSpacing: '-1px' }}>QA Mindset</h1>
       <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap', alignItems: 'center' }}>
         <input
           type="text"

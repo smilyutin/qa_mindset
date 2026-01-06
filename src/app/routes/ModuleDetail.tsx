@@ -64,23 +64,19 @@ const ModuleDetail = () => {
         <div style={{ fontSize: 18, lineHeight: 1.7, marginBottom: 32 }}>
           <MarkdownRenderer content={content} />
         </div>
-        {/* Checklist UI removed; Practical Checklist will be rendered from markdown content */}
-        {/* Exercises Section removed */}
-        {/* Default exercises for other modules can go here if needed */}
+        {/* Next module link always visible at bottom, left-aligned for accessibility */}
+        <div style={{ marginTop: 40, textAlign: 'left' }}>
+          {nextModule ? (
+            <Link to={`/modules/${nextModule.id}`} style={{ textDecoration: 'none', color: '#6366f1', fontWeight: 600, fontSize: 18 }}>
+              Next: {nextModule.title} &rarr;
+            </Link>
+          ) : (
+            <Link to="/" style={{ textDecoration: 'none', color: '#6366f1', fontWeight: 600, fontSize: 18 }}>
+              &larr; Home
+            </Link>
+          )}
+        </div>
       </div>
-      {nextModule ? (
-        <div style={{ marginTop: 40, textAlign: 'right' }}>
-          <Link to={`/modules/${nextModule.id}`} style={{ textDecoration: 'none', color: '#6366f1', fontWeight: 600, fontSize: 18 }}>
-            Next: {nextModule.title} &rarr;
-          </Link>
-        </div>
-      ) : (
-        <div style={{ marginTop: 40, textAlign: 'right' }}>
-          <Link to="/" style={{ textDecoration: 'none', color: '#6366f1', fontWeight: 600, fontSize: 18 }}>
-            &larr; Home
-          </Link>
-        </div>
-      )}
     </>
   );
 };
