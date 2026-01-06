@@ -1,53 +1,59 @@
-# React + TypeScript + Vite
+# QA Mindset
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the QA Mindset portal! This project is a modern, interactive curriculum for quality assurance professionals, focusing on risk, value, and practical skills for real-world teams.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- Browse a catalog of QA modules covering foundations, strategy, automation, and leadership
+- Clean, responsive grid layout with modern design
+- Each module includes practical checklists and actionable insights
+- Easy navigation between modules
+- Built with Vite, React, and Markdown for fast, dynamic content
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📚 Modules Overview
+- QA Foundations & Mindset
+- Test Design Techniques
+- SDLC + Agile + Scrum Essentials
+- Requirements & Acceptance Criteria
+- Defect Lifecycle & Bug Reporting
+- Test Planning & Strategy
+- Exploratory Testing
+- Test Data & Environment
+- ...and many more!
 
-## React Compiler
+## 🖥️ Getting Started
+1. Clone this repo:
+   ```sh
+   git clone https://github.com/smilyutin/qa_mindset.git
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the dev server:
+   ```sh
+   npm run dev
+   ```
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 Project Structure
+- `src/app/data/modules.ts` — Module catalog (single source of truth)
+- `public/modules/` — Markdown content for each module
+- `src/app/routes/Modules.tsx` — Main grid view
+- `src/app/routes/ModuleDetail.tsx` — Module detail view
+- `src/app/components/` — UI components
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
+You can deploy this project to Vercel, Netlify, or GitHub Pages for a public curriculum portal.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🤝 Contributing
+Pull requests and suggestions are welcome! Please open an issue or PR to discuss improvements.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📄 License
+MIT
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
+> QA is about risk, value, and helping teams make better decisions. This portal is your guide to a modern QA mindset.
 import reactDom from 'eslint-plugin-react-dom'
 
 export default defineConfig([
