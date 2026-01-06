@@ -1,5 +1,3 @@
-
-
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { modules } from '../data/modules';
@@ -13,7 +11,12 @@ type Module = {
 
 const fetchMarkdown = async (filePath: string): Promise<string> => {
   const response = await fetch(filePath);
-  return await response.text();
+  const text = await response.text();
+  // If the response is HTML (likely a 404), show a friendly error
+  if (text.startsWith('<!DOCTYPE html>') || text.startsWith('<html')) {
+    return 'Module content not found. Please check the module path or try again later.';
+  }
+  return text;
 };
 
 const ModuleDetail = () => {
