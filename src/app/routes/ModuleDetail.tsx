@@ -56,7 +56,7 @@ const ModuleDetail = () => {
   return (
     <>
       <div style={{ width: '100vw', minHeight: '100vh', background: 'linear-gradient(120deg, #f1f5f9 60%, #e0e7ff 100%)', padding: '40px 4vw 60px 4vw', boxSizing: 'border-box', fontFamily: 'Inter, system-ui, Avenir, Helvetica, Arial, sans-serif', color: '#1e293b' }}>
-        {/* Home button at the top */}
+        {/* Home button at the top for every page */}
         <div style={{ marginBottom: 24 }}>
           <Link to="/" style={{ textDecoration: 'none', color: '#6366f1', fontWeight: 600, fontSize: 18 }}>&larr; Home</Link>
         </div>
@@ -64,9 +64,13 @@ const ModuleDetail = () => {
         <div style={{ fontSize: 18, lineHeight: 1.7, marginBottom: 32 }}>
           <MarkdownRenderer content={content} />
         </div>
-        {/* Next module link always visible at bottom, center-aligned for visibility */}
+        {/* Next module link or Home button at bottom, center-aligned for visibility */}
         <div style={{ marginTop: 40, textAlign: 'center' }}>
-          {nextModule ? (
+          {(id === 'six-sigma-mental-models' || id === 'lean-mental-models' || id === 'lean-vs-six-sigma' || id === 'qa-regulated-domains') ? (
+            <Link to="/" style={{ textDecoration: 'none', color: '#6366f1', fontWeight: 600, fontSize: 18 }}>
+              &larr; Home
+            </Link>
+          ) : nextModule ? (
             <Link to={`/modules/${nextModule.id}`} style={{ textDecoration: 'none', color: '#6366f1', fontWeight: 600, fontSize: 18 }}>
               Next: {nextModule.title} &rarr;
             </Link>

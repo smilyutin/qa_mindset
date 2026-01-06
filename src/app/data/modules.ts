@@ -234,11 +234,37 @@ export const modules: Module[] = [
     tags: ["mentoring", "onboarding", "testers"],
     file: "modules/28-mentoring-onboarding.md",
   },
-  {
+
+   {
     id: "qa-regulated-domains",
     title: "QA in regulated domains (audit-ready traceability)",
     level: "Advanced",
     tags: ["regulated", "audit", "traceability"],
     file: "modules/29-qa-regulated-domains.md",
   },
+
+  {
+    id: "six-sigma-mental-models",
+    title: "Six Sigma Mental Models (concepts for QA, engineering, leadership)",
+    level: "Advanced",
+    tags: ["six sigma", "mental models", "systems", "variation", "improvement"],
+    file: "modules/30-six-sigma-mental-models.md",
+  },
+
+  {
+    id: "lean-mental-models",
+    title: "Lean Mental Models (flow, value, waste, improvement)",
+    level: "Advanced",
+    tags: ["lean", "flow", "value", "waste", "improvement"],
+    file: "modules/31-lean-mental-models.md",
+  },
+
+  {
+    id: "lean-vs-six-sigma",
+    title: "Lean vs Six Sigma (flow vs stability, how to combine)",
+    level: "Advanced",
+    tags: ["lean", "six sigma", "flow", "stability", "comparison", "combined"],
+    file: "modules/32-lean-vs-six-sigma.md",
+  },
+  
 ];

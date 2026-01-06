@@ -19,21 +19,22 @@ const Modules: React.FC = () => {
 
   return (
     <div style={{ width: '100vw', minHeight: '100vh', background: 'linear-gradient(120deg, #f1f5f9 60%, #e0e7ff 100%)', padding: '40px 4vw 60px 4vw', boxSizing: 'border-box', fontFamily: 'Inter, system-ui, Avenir, Helvetica, Arial, sans-serif', color: '#1e293b' }}>
-      <h1 style={{ textAlign: 'left', marginBottom: 36, fontSize: 38, fontWeight: 800, color: '#1e293b', letterSpacing: '-1px' }}>QA Mindset</h1>
-      <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap', alignItems: 'center' }}>
+      <div style={{ display: 'flex', gap: '1.2rem', marginBottom: '2.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+        <h1 style={{ fontSize: 38, fontWeight: 800, color: '#3730a3', letterSpacing: '-1px', margin: 0, whiteSpace: 'nowrap' }}>QA Mindset</h1>
         <input
           type="text"
           placeholder="Search modules..."
           value={search}
           onChange={e => setSearch(e.target.value)}
+          style={{ padding: '0.6em 1.2em', borderRadius: 8, border: '1.5px solid #3730a3', fontSize: 18, outline: 'none', color: '#1e293b', background: '#fff', minWidth: 180 }}
         />
-        <select value={level} onChange={e => setLevel(e.target.value)}>
+        <select value={level} onChange={e => setLevel(e.target.value)} style={{ padding: '0.6em 1.2em', borderRadius: 8, border: '1.5px solid #3730a3', fontSize: 18, color: '#1e293b', background: '#fff', minWidth: 140 }}>
           <option value="">All Levels</option>
           {uniqueLevels.map(l => (
             <option key={l} value={l}>{l}</option>
           ))}
         </select>
-        <select value={tag} onChange={e => setTag(e.target.value)}>
+        <select value={tag} onChange={e => setTag(e.target.value)} style={{ padding: '0.6em 1.2em', borderRadius: 8, border: '1.5px solid #3730a3', fontSize: 18, color: '#1e293b', background: '#fff', minWidth: 140 }}>
           <option value="">All Tags</option>
           {uniqueTags.map(t => (
             <option key={t} value={t}>{t}</option>
@@ -41,9 +42,19 @@ const Modules: React.FC = () => {
         </select>
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2.2rem', alignItems: 'stretch' }}>
-        {filtered.map(module => (
-          <ModuleCard key={module.id} module={module} />
-        ))}
+        {(() => {
+          // Find index of QA Regulated Domains
+          const qaIdx = filtered.findIndex(m => m.id === 'qa-regulated-domains');
+          if (qaIdx === -1) return filtered.map(module => <ModuleCard key={module.id} module={module} />);
+          // Split modules
+          const beforeQA = filtered.slice(0, qaIdx + 1);
+          const afterQA = filtered.slice(qaIdx + 1);
+          return [
+            ...beforeQA.map(module => <ModuleCard key={module.id} module={module} />),
+            <div key="divider" style={{ gridColumn: '1/-1', margin: '32px 0' }}><hr style={{ border: 'none', borderTop: '2px solid #c7d2fe', margin: 0 }} /></div>,
+            ...afterQA.map(module => <ModuleCard key={module.id} module={module} />)
+          ];
+        })()}
       </div>
     </div>
   );
