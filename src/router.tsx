@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Modules from './app/routes/Modules';
 import ModuleDetail from './app/routes/ModuleDetail';
