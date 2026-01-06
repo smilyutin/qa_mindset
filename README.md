@@ -45,6 +45,34 @@ Welcome to the QA Mindset portal! This project is a modern, interactive curricul
 ## 🌐 Live Demo
 You can deploy this project to Vercel, Netlify, or GitHub Pages for a public curriculum portal.
 
+## 🌐 Deploying to GitHub Pages
+
+To publish this curriculum portal as a public site:
+
+1. Add a homepage field to your `package.json`:
+   ```json
+   "homepage": "https://<your-github-username>.github.io/<your-repo-name>"
+   ```
+2. Install the gh-pages package:
+   ```sh
+   npm install --save-dev gh-pages
+   ```
+3. Add deploy scripts to `package.json`:
+   ```json
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d dist"
+   }
+   ```
+4. Build and deploy:
+   ```sh
+   npm run deploy
+   ```
+5. In your GitHub repo settings, set Pages source to the `gh-pages` branch.
+
+Your site will be live at:
+https://<your-github-username>.github.io/<your-repo-name>
+
 ## 🤝 Contributing
 Pull requests and suggestions are welcome! Please open an issue or PR to discuss improvements.
 
@@ -76,4 +104,3 @@ export default defineConfig([
     },
   },
 ])
-```
