@@ -23,7 +23,7 @@ Same goal. Different lenses.
 
 ## Primary Focus
 | Aspect| Lean| Six Sigma|
-|--------------|-------------------------|-------------------------|
+|-------------------|-------------------------|-------------------------|
 | Main goal| Faster flow| Predictable outcomes|
 | Primary enemy| Waste| Variation|
 | Key question| Is this step necessary?| Why does this vary?|
