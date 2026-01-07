@@ -12,15 +12,6 @@ This module focuses on **practical, proven test design techniques** used by effe
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Apply core test design techniques effectively
-- Reduce test cases without reducing coverage
-- Design tests based on risk and behavior
-- Select the right technique for the problem at hand
-
----
-
 ## Why Test Design Matters
 
 Poor test design leads to:

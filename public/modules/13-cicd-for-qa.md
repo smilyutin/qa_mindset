@@ -12,16 +12,6 @@ This module explains how QA fits into CI/CD and how to design pipelines that tea
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand the role of QA in CI/CD
-- Design effective continuous testing stages
-- Decide what tests belong at each pipeline stage
-- Use test results as quality signals
-- Avoid common CI/CD testing pitfalls
-
----
-
 ## What Is Continuous Testing?
 
 Continuous testing means:

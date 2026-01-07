@@ -13,16 +13,6 @@ This module focuses on how QA should **use AI responsibly and effectively**.
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand where AI adds real value to QA
-- Distinguish augmentation from replacement
-- Identify safe and unsafe AI use cases in testing
-- Integrate AI into existing QA strategy
-- Communicate AI-related risk clearly
-
----
-
 ## What AI Is (and Is Not) in QA
 AI in QA is:
 - A productivity accelerator

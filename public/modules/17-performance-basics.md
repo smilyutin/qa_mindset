@@ -12,16 +12,6 @@ This module focuses on **practical performance testing** from a QA perspective â
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand why performance testing matters
-- Distinguish different types of performance tests
-- Identify performance risks early
-- Design basic performance test scenarios
-- Interpret results and communicate findings effectively
-
----
-
 ## Why Performance Testing Matters
 
 Performance impacts:

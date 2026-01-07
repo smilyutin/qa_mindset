@@ -13,16 +13,6 @@ This module focuses on **design principles and patterns**, not specific framewor
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand what test architecture is and why it matters
-- Recognize common automation architecture patterns
-- Identify architectural anti-patterns
-- Align automation design with system architecture
-- Build automation that scales sustainably
-
----
-
 ## What Is Test Architecture?
 Test architecture defines:
 - Test layers and responsibilities

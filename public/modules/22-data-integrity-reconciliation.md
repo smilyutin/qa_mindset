@@ -12,16 +12,6 @@ This module focuses on **how QA validates data correctness across boundaries**, 
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand what data integrity means in practice
-- Identify common causes of data inconsistency
-- Recognize where reconciliation is required
-- Evaluate reconciliation strategies and risks
-- Communicate data integrity issues clearly
-
----
-
 ## What Is Data Integrity?
 Data integrity means:
 - Data is accurate

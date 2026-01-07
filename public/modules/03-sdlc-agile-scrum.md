@@ -13,16 +13,6 @@ This module focuses on how QA contributes meaningfully within **Agile and Scrum 
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand SDLC stages and QA responsibilities
-- Explain Scrum roles and ceremonies from a QA perspective
-- Identify where QA should engage early and often
-- Apply QA practices in Agile delivery
-- Translate theory into real testing actions
-
----
-
 ## SDLC Overview (QA View)
 
 ### Typical SDLC Stages

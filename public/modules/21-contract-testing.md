@@ -13,16 +13,6 @@ This module explains **why contract testing matters**, how it differs from integ
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand what contract testing validates
-- Distinguish contract testing from integration testing
-- Identify where contract testing adds the most value
-- Recognize common contract failure patterns
-- Position contract testing within a broader QA strategy
-
----
-
 ## What Is Contract Testing?
 Contract testing validates the **agreement** between a consumer and a provider.
 

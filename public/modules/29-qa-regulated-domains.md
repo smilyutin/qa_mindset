@@ -13,16 +13,6 @@ This module focuses on how QA works effectively in **regulated industries**.
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand what makes regulated domains different
-- Identify QA responsibilities unique to regulated systems
-- Balance compliance with delivery speed
-- Communicate effectively with compliance, audit, and legal stakeholders
-- Avoid common regulatory QA failure patterns
-
----
-
 ## What Makes a Domain “Regulated”
 A domain is regulated when:
 - External rules govern system behavior

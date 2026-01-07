@@ -13,15 +13,6 @@ This module focuses on building **clear, risk-driven test strategies** and pract
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Explain the difference between test strategy and test plan
-- Identify and prioritize testing based on risk
-- Design a balanced test approach across layers
-- Create test plans that support fast, safe releases
-
----
-
 ## Test Strategy vs Test Plan
 
 ### Test Strategy

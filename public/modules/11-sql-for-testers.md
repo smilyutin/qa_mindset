@@ -13,16 +13,6 @@ This module focuses on **practical SQL skills** every QA engineer should have.
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand why SQL matters for QA
-- Write basic SQL queries to validate data
-- Verify business logic using database checks
-- Identify data-related defects
-- Use SQL safely and responsibly in test environments
-
----
-
 ## Why SQL Matters in QA
 SQL helps QA:
 - Validate backend behavior

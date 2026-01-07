@@ -11,16 +11,6 @@ Organizations do not “lack quality culture” — they behave exactly accordin
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand what quality culture really means
-- Identify behaviors that indicate weak or strong quality culture
-- Influence quality without relying on authority
-- Align incentives with quality outcomes
-- Sustain quality practices as teams scale
-
----
-
 ## What Quality Culture Really Is
 Quality culture is:
 - How teams treat risk

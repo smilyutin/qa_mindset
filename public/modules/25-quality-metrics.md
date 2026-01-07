@@ -13,16 +13,6 @@ This module focuses on **meaningful QA metrics** that help teams, leaders, and o
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Distinguish meaningful quality metrics from vanity metrics
-- Select metrics aligned with business and delivery risk
-- Communicate quality trends clearly
-- Use metrics to drive improvement, not blame
-- Avoid common measurement anti-patterns
-
----
-
 ## Why Quality Metrics Matter
 Quality metrics help organizations:
 - Assess release readiness

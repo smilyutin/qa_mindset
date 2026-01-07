@@ -12,17 +12,6 @@ This module focuses on **practical API testing**, using Postman and automation e
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand what makes APIs testable
-- Design effective API test coverage
-- Validate positive and negative scenarios
-- Use Postman for manual and automated checks
-- Integrate API tests into CI/CD
-- Avoid common automation anti-patterns
-
----
-
 ## What to Test at the API Layer
 
 Focus on **behavior**, not just responses.

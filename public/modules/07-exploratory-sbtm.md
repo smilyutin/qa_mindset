@@ -12,16 +12,6 @@ This module focuses on how to explore effectively without sacrificing accountabi
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Explain what exploratory testing is (and is not)
-- Structure exploration using SBTM
-- Write effective test charters
-- Capture findings clearly
-- Use exploration to reduce risk before release
-
----
-
 ## What Is Exploratory Testing?
 
 Exploratory testing is:

@@ -12,16 +12,6 @@ The testing pyramid is a **thinking tool**, not a rulebook. This module explains
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Explain the purpose of the testing pyramid
-- Decide what to automate and what not to
-- Balance automation across layers
-- Avoid common automation traps
-- Ensure environments are ready for reliable automation
-
----
-
 ## The Testing Pyramid (Practical View)
 
 Classic layers:
