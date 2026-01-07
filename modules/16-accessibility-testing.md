@@ -13,16 +13,6 @@ This module focuses on **practical accessibility testing** that QA engineers can
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand why accessibility matters
-- Explain basic WCAG principles
-- Identify common accessibility issues
-- Perform manual and automated accessibility checks
-- Integrate accessibility testing into regular QA workflows
-
----
-
 ## Why Accessibility Matters
 
 Accessibility impacts:

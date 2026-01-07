@@ -11,16 +11,6 @@ This module covers the full defect lifecycle, how to classify issues correctly, 
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand the full defect lifecycle
-- Correctly distinguish **severity** from **priority**
-- Write clear, actionable defect reports
-- Perform basic root cause analysis
-- Use defects as feedback for improvement
-
----
-
 ## Defect Lifecycle Overview
 
 Typical defect states:

@@ -9,15 +9,6 @@ Before test cases, automation, or pipelines, QA is about **understanding risk**,
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Explain the difference between **QA** and **QE**
-- Identify and prioritize **business risk**
-- Focus testing efforts on **value, not volume**
-- Understand where QA fits in modern Agile teams
-
----
-
 ## QA vs QE
 
 ### Quality Assurance (QA)

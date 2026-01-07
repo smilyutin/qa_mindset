@@ -13,16 +13,6 @@ This module focuses on observability from a **QA perspective**, not SRE theory.
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand core observability concepts
-- Use logs, metrics, and traces to debug failures
-- Distinguish product defects from environment issues
-- Improve defect reports with technical evidence
-- Collaborate more effectively with developers and SREs
-
----
-
 ## What Is Observability?
 
 Observability answers the question:

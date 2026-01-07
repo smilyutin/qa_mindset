@@ -11,16 +11,6 @@ Mentoring and onboarding determine whether new team members become confident con
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand why onboarding and mentoring are critical to QA effectiveness
-- Design onboarding that accelerates contribution, not just compliance
-- Mentor QA engineers at different career stages
-- Transfer judgment, not just process
-- Avoid common mentoring and onboarding anti-patterns
-
----
-
 ## Why Onboarding Matters in QA
 Poor onboarding leads to:
 - Slow ramp-up

@@ -13,16 +13,6 @@ This module focuses on how QA contributes to **clear go / conditional go / no-go
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand what release readiness truly means
-- Identify readiness dimensions beyond functional testing
-- Assess and communicate release risk clearly
-- Support informed go-live decisions
-- Recognize common release anti-patterns
-
----
-
 ## What Release Readiness Really Means
 Release readiness answers one question:
 

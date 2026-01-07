@@ -10,15 +10,6 @@ For QA, security testing is about **validating expected protective behavior**, e
 QA does not hunt vulnerabilities like an attacker.  
 QA ensures the system **fails safely**, **enforces rules**, and **protects trust**.
 
----
-
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand QA’s responsibility in security testing
-- Identify security risks QA is expected to validate
-- Test authentication and authorization behavior
-- Validate API and data exposure controls
-- Communicate security risk clearly to teams and leadership
 
 ---
 

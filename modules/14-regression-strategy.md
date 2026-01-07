@@ -16,16 +16,6 @@ This module focuses on building a **smart, risk-based regression strategy** that
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Explain the purpose of regression testing
-- Design a scalable regression strategy
-- Select the right regression scope per release
-- Optimize regression suites over time
-- Balance automation and manual regression effectively
-
----
-
 ## What Is Regression Testing?
 
 Regression testing validates that:

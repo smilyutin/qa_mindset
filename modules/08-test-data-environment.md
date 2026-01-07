@@ -16,16 +16,6 @@ This module focuses on managing test data and environments so testing produces *
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand different types of test data
-- Manage data safely and effectively
-- Identify common environment-related risks
-- Apply exploratory heuristics to uncover hidden issues
-- Reduce false failures and wasted effort
-
----
-
 ## Test Environments Overview
 
 Typical environments:

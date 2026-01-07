@@ -12,16 +12,6 @@ This module explains how to test integrations effectively and how contract testi
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand what integration and contract testing validate
-- Identify high-risk integration points
-- Design integration test scenarios
-- Apply contract testing concepts
-- Detect breaking changes early
-
----
-
 ## What Is Integration Testing?
 
 Integration testing validates:

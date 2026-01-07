@@ -12,16 +12,6 @@ This module focuses on how QA communicates with **product, engineering, and lead
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Communicate quality and risk clearly to different stakeholders
-- Translate testing results into business impact
-- Influence decisions without formal authority
-- Avoid common communication traps
-- Build long-term credibility and trust
-
----
-
 ## Why Stakeholder Communication Matters
 Poor communication leads to:
 - Misaligned expectations

@@ -13,16 +13,6 @@ This module focuses on understanding requirements, identifying gaps, and definin
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Analyze requirements from a QA perspective
-- Identify ambiguity and hidden assumptions
-- Write clear acceptance criteria
-- Use BDD-style scenarios to clarify behavior
-- Reduce rework by improving requirement quality
-
----
-
 ## What Makes a Good Requirement?
 
 A good requirement is:

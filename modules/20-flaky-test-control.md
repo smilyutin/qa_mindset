@@ -12,16 +12,6 @@ This module focuses on **preventing, detecting, and controlling flakiness** thro
 
 ---
 
-## Learning Objectives
-By the end of this module, you should be able to:
-- Understand what flakiness really is and why it occurs
-- Identify common sources of flaky tests
-- Establish controls to prevent flakiness
-- Define ownership and governance for test stability
-- Restore trust in CI/CD test signals
-
----
-
 ## What Flaky Tests Really Indicate
 Flaky tests often indicate:
 - Uncontrolled test data or state
