@@ -7,7 +7,7 @@ interface MarkdownRendererProps {
 }
 
 const isHtmlContent = (content: string) => {
-  return /^\s*(?:<!doctype html\b|<html\b)/i.test(content);
+  return content.startsWith('<!DOCTYPE html>') || content.startsWith('<html');
 };
 
 const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {

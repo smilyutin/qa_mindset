@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { modules } from '../data/modules';
 import MarkdownRenderer from '../components/MarkdownRenderer';
+
 type Module = {
   id: string;
   title: string;
@@ -16,7 +17,7 @@ const fetchMarkdown = async (filePath: string): Promise<string> => {
   const response = await fetch(url);
   const text = await response.text();
   // If the response is HTML (likely a 404), show a friendly error
-  if (!response.ok || response.headers.get('content-type')?.includes('text/html') || /^\s*(?:<!doctype html\b|<html\b)/i.test(text)) {
+  if (text.startsWith('<!DOCTYPE html>') || text.startsWith('<html')) {
     return 'Module content not found. Please check the module path or try again later.';
   }
   return text;
