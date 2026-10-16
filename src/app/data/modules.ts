@@ -260,11 +260,11 @@ export const modules: Module[] = [
   },
 
   {
-    id: "lean-vs-six-sigma",
-    title: "Lean vs Six Sigma (flow vs stability, how to combine)",
+    id: "ai_native_sdlc",
+    title: "AI-Native SDLC",
     level: "Advanced",
-    tags: ["lean", "six sigma", "flow", "stability", "comparison", "combined"],
-    file: "modules/32-lean-vs-six-sigma.md",
+    tags: ["AI", "SDLC", "flow", "stability", "comparison", "combined"],
+    file: "modules/30-ai-native-sdlc.md",
   },
   
 ];
