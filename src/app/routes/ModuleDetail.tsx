@@ -46,8 +46,9 @@ const ModuleDetail = () => {
 
   // handleCheck removed
 
-  // Find next module by order in the array
+  // Follow the catalog order for previous and next navigation.
   const currentIdx = modules.findIndex((m: Module) => m.id === id);
+  const previousModule = currentIdx > 0 ? modules[currentIdx - 1] : null;
   const nextModule = currentIdx >= 0 && currentIdx < modules.length - 1 ? modules[currentIdx + 1] : null;
 
   if (!module) return <div>Module not found</div>;
@@ -63,22 +64,18 @@ const ModuleDetail = () => {
         <div style={{ fontSize: 18, lineHeight: 1.7, marginBottom: 32 }}>
           <MarkdownRenderer content={content} />
         </div>
-        {/* Next module link or Home button at bottom, center-aligned for visibility */}
-        <div style={{ marginTop: 40, textAlign: 'center' }}>
-          {(id === 'six-sigma-mental-models' || id === 'lean-mental-models' || id === 'lean-vs-six-sigma' || id === 'qa-regulated-domains') ? (
-            <Link to="/" style={{ textDecoration: 'none', color: '#6366f1', fontWeight: 600, fontSize: 18 }}>
-              &larr; Home
-            </Link>
-          ) : nextModule ? (
-            <Link to={`/modules/${nextModule.id}`} style={{ textDecoration: 'none', color: '#6366f1', fontWeight: 600, fontSize: 18 }}>
-              Next: {nextModule.title} &rarr;
-            </Link>
-          ) : (
-            <Link to="/" style={{ textDecoration: 'none', color: '#6366f1', fontWeight: 600, fontSize: 18 }}>
-              &larr; Home
+        <nav aria-label="Slide navigation" style={{ marginTop: 40, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 24 }}>
+          {previousModule && (
+            <Link rel="prev" to={`/modules/${previousModule.id}`} style={{ textDecoration: 'none', color: '#6366f1', fontWeight: 600, fontSize: 18, flex: '1 1 260px' }}>
+              &larr; Previous: {previousModule.title}
             </Link>
           )}
-        </div>
+          {nextModule && (
+            <Link rel="next" to={`/modules/${nextModule.id}`} style={{ textDecoration: 'none', color: '#6366f1', fontWeight: 600, fontSize: 18, flex: '1 1 260px', textAlign: 'right', marginLeft: 'auto' }}>
+              Next: {nextModule.title} &rarr;
+            </Link>
+          )}
+        </nav>
       </div>
     </>
   );
