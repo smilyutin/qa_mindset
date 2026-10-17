@@ -273,4 +273,11 @@ export const modules: Module[] = [
     tags: ["AI", "API", "SDLC", "LLM", "evaluation", "red teaming"],
     file: "modules/33-ai-api-qa-sdlc.md",
   },
+  {
+    id: "ai-qa-sdlc",
+    title: "AI QA SDLC (testing AI systems, AI in QA)",
+    level: "Advanced",
+    tags: ["AI", "SDLC", "LLM", "evaluation", "red teaming"],
+    file: "modules/34-ai-qa-sdlc.md",
+  },
 ];
