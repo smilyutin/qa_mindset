@@ -260,6 +260,30 @@ export const modules: Module[] = [
   },
 
   {
+    id: "process-mapping",
+    title: "Process Mapping (steps, decisions, handoffs)",
+    level: "Advanced",
+    tags: ["process mapping", "swimlanes", "flow", "handoffs", "improvement"],
+    file: "modules/36-process-mapping.md",
+  },
+
+  {
+    id: "model-for-improvement",
+    title: "MFI — Model for Improvement",
+    level: "Advanced",
+    tags: ["MFI", "PDSA", "improvement", "measures", "service users"],
+    file: "modules/35-model-for-improvement.md",
+  },
+
+  {
+    id: "pdsa",
+    title: "PDSA (Plan–Do–Study–Act)",
+    level: "Advanced",
+    tags: ["PDSA", "improvement", "change", "measures", "service users"],
+    file: "modules/34-pdsa.md",
+  },
+
+  {
     id: "ai_native_sdlc",
     title: "AI-Native SDLC",
     level: "Advanced",
@@ -267,17 +291,10 @@ export const modules: Module[] = [
     file: "modules/30-ai-native-sdlc.md",
   },
   {
-    id: "ai-api-sdlc",
-    title: "AI API SDLC (building APIs with LLM features)",
+    id: "ai-api-qa-sdlc",
+    title: "AI API & QA SDLC (build, test, evaluate)",
     level: "Advanced",
-    tags: ["AI", "API", "SDLC", "LLM", "evaluation"],
-    file: "modules/33-ai-api-sdlc.md",
-  },
-  {
-    id: "ai-qa-sdlc",
-    title: "AI QA SDLC (testing AI systems, AI in QA)",
-    level: "Advanced",
-    tags: ["AI", "SDLC", "LLM", "evaluation", "red teaming"],
-    file: "modules/34-ai-qa-sdlc.md",
+    tags: ["AI", "API", "SDLC", "LLM", "evaluation", "red teaming"],
+    file: "modules/33-ai-api-qa-sdlc.md",
   },
 ];

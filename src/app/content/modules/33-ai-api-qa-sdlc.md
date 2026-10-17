@@ -1,48 +1,45 @@
-**Testing AI Systems and Using AI in QA, Across the Lifecycle**
+**Building, Testing and Evaluating AI-Powered APIs Across the Lifecycle**
 
 ---
 
 ## Overview
 
-Testing AI systems breaks a core QA assumption: **one input, one expected output**.
+An AI-powered API combines conventional code with a probabilistic component. The same request can produce different valid answers, so delivery needs both API contracts and measurable quality criteria.
 
-LLM-based features are non-deterministic, change when the model changes, and fail in subtle ways (confident wrong answers, unsafe content, silent drift).
+This module follows one lifecycle from requirements and API design through evaluation, security, deployment and production feedback. It also covers using AI as a tool inside QA.
 
-At the same time, AI is becoming a tool **inside** QA: generating test ideas, data and code, and judging outputs.
+## Lifecycle and Responsibilities
 
-This module covers the QA lifecycle for both sides: **QA of AI** and **AI in QA**.
-
----
-
-## AI QA SDLC Overview
-
-### Stages
-
-1. Test Strategy
-2. Eval Datasets
-3. Test Design (non-deterministic assertions)
-4. LLM-as-Judge
-5. Red Teaming
-6. Regression & Eval Gates in CI
-7. Observability
-8. Human Review
-
-Like any Agile QA work, these stages **overlap and repeat** with every prompt, model or data change.
-
----
-
-## QA Responsibilities Across the AI QA SDLC
-
-| Stage | QA Contribution |
+| Stage | Engineering and QA work |
 | --- | --- |
-| Test Strategy | Define quality dimensions, risks, and what "good enough" means |
-| Eval Datasets | Build and maintain representative, versioned test sets |
-| Test Design | Write assertions that tolerate variation but catch failure |
-| LLM-as-Judge | Design rubrics, calibrate judges against humans |
-| Red Teaming | Attack the system: injection, jailbreaks, harmful output |
-| CI Gates | Block regressions on scores, not just on pass/fail |
-| Observability | Monitor quality, drift and safety in production |
-| Human Review | Sample, grade, and feed findings back into evals |
+| Requirements | Define the task, quality dimensions, unacceptable outcomes and budgets |
+| Design and build | Specify contracts, prompts, retrieval, model versions and fallback behavior |
+| Data and test design | Maintain representative eval cases and deterministic contract checks |
+| Evaluation | Score outputs with properties, calibrated judges and human review |
+| Security | Test authorization, injection, leakage and tool permissions |
+| Release | Compare against a baseline and deploy versioned artifacts with rollback |
+| Production feedback | Monitor quality, cost and latency; turn failures into regression cases |
+
+These activities overlap and repeat whenever code, prompts, models or retrieval data change.
+
+## Requirements, API Design and Build
+
+Define what the model does: summarize, classify, extract, answer or act. Agree on quality thresholds by risk, a p95 latency budget, a cost budget per request and outcomes the system must never produce.
+
+For a ticket summarization API, example criteria might include schema-valid responses on at least 95% of first attempts and grounded summaries on at least 90% of a representative eval set. These are example targets to adapt to the feature's risk.
+
+Design the surrounding API explicitly:
+
+- Define request and response schemas, allowed labels and input size limits.
+- Keep authentication, authorization and tool permissions in trusted application code.
+- Filter retrieval by the caller's permissions before passing context to the model.
+- Version prompt templates, model identifiers, retrieval configuration and eval datasets alongside code.
+- Validate model output before returning it or using it to invoke a tool.
+- Bound retries, token usage, tool loops and timeouts; define provider-outage and invalid-output behavior.
+
+For example, `POST /v1/answers` might return `answer`, `sources[]`, `model` and `prompt_version`. Document error responses and fallback behavior as part of the contract.
+
+Mock model responses to test surrounding code deterministically, then run live-model evaluations to measure generated output quality.
 
 ---
 
@@ -209,6 +206,17 @@ Gate rules:
 
 ---
 
+## Deployment and Rollback
+
+Release code, prompts, model identifiers and retrieval configuration as a traceable version set. Use pinned model versions where available and evaluate provider changes before adopting them.
+
+- Compare the candidate with the approved baseline on quality, safety, cost and latency.
+- Use a staged rollout and monitor critical slices before expanding traffic.
+- Keep the previous working version set available for rollback.
+- Assign an owner and rollback triggers for quality regressions, cost spikes and provider failures.
+
+---
+
 ## 7. Observability
 
 Production is where real inputs appear.
@@ -295,9 +303,9 @@ Rule: AI output in QA is a **draft**. A tester owns the result.
 
 ## Hands-On Exercises
 
-### Exercise 1: Assertions
+### Exercise 1: API Contract and Assertions
 
-For an API that answers questions from a policy document, write:
+For an API that answers questions from a policy document, define its response schema, latency and cost budgets, permission checks and fallback behavior. Then write:
 
 - 2 schema assertions
 
@@ -373,6 +381,10 @@ Define:
 - Ignoring model provider updates
 
 - Accepting AI-generated tests without review
+
+- Shipping unversioned prompts or changing models without evaluation
+
+- Letting the model decide authorization or logging raw sensitive prompts
 
 ---
 
