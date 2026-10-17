@@ -392,3 +392,24 @@ Fewer surprises means:
 Carry these models with you.  
 Apply them when the pain appears.  
 That is Six Sigma in practice.
+
+---
+
+## My Experience
+
+> “I have used SQL for data validation and investigated defects and discrepancies across complex systems. These are transferable analytical skills; I would not describe myself as Six Sigma certified or claim formal DMAIC leadership.”
+
+---
+
+## Service-User Involvement and Unintended Effects
+
+> “I would ask service users what a satisfactory outcome means to them. I would check whether faster average processing hides longer waits for people with more complex needs.”
+
+---
+
+## Related Improvement Modules
+
+- [Lean](#/modules/lean-mental-models) — Improve flow and reduce waste.
+- [Process Mapping](#/modules/process-mapping) — Make steps, responsibilities and handoffs visible.
+- [MFI — Model for Improvement](#/modules/model-for-improvement) — Define the aim, measures and changes to test.
+- [PDSA](#/modules/pdsa) — Test a change, study the results and decide what comes next.
