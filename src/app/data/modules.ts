@@ -266,5 +266,11 @@ export const modules: Module[] = [
     tags: ["AI", "SDLC", "flow", "stability", "comparison", "combined"],
     file: "modules/30-ai-native-sdlc.md",
   },
-  
+  {
+    id: "ai-api-sdlc",
+    title: "AI API SDLC (building APIs with LLM features)",
+    level: "Advanced",
+    tags: ["AI", "API", "SDLC", "LLM", "evaluation"],
+    file: "modules/33-ai-api-sdlc.md",
+  },
 ];
