@@ -267,17 +267,10 @@ export const modules: Module[] = [
     file: "modules/30-ai-native-sdlc.md",
   },
   {
-    id: "ai-api-sdlc",
-    title: "AI API SDLC (building APIs with LLM features)",
+    id: "ai-api-qa-sdlc",
+    title: "AI API & QA SDLC (build, test, evaluate)",
     level: "Advanced",
-    tags: ["AI", "API", "SDLC", "LLM", "evaluation"],
-    file: "modules/33-ai-api-sdlc.md",
-  },
-  {
-    id: "ai-qa-sdlc",
-    title: "AI QA SDLC (testing AI systems, AI in QA)",
-    level: "Advanced",
-    tags: ["AI", "SDLC", "LLM", "evaluation", "red teaming"],
-    file: "modules/34-ai-qa-sdlc.md",
+    tags: ["AI", "API", "SDLC", "LLM", "evaluation", "red teaming"],
+    file: "modules/33-ai-api-qa-sdlc.md",
   },
 ];
