@@ -316,3 +316,24 @@ Lean’s ultimate goal is simple:
 
 Once you see waste, you can’t unsee it.
 That is Lean.
+
+---
+
+## My Experience
+
+> “My practical experience includes identifying repetitive QA work, clarifying requirements, and introducing automated validation. These activities align with Lean principles, although I have not established formal Lean project leadership or certification.”
+
+---
+
+## Service-User Involvement and Unintended Effects
+
+> “I would ask individuals and families which steps create difficulty and test changes with people who have different accessibility needs. I would check that simplification does not remove necessary safeguards or shift work onto families.”
+
+---
+
+## Related Improvement Modules
+
+- [Six Sigma](#/modules/six-sigma-mental-models) — Understand variation and improve consistency.
+- [Process Mapping](#/modules/process-mapping) — Make steps, responsibilities and handoffs visible.
+- [MFI — Model for Improvement](#/modules/model-for-improvement) — Define the aim, measures and changes to test.
+- [PDSA](#/modules/pdsa) — Test a change, study the results and decide what comes next.
