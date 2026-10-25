@@ -17,6 +17,13 @@ export const modules: Module[] = [
     
     file: "modules/01-foundations.md",
   },
+  {
+    id: "software-testing-principles-techniques-practices",
+    title: "Software Testing Principles, Techniques & Practices",
+    level: "Foundations",
+    tags: ["principles", "test techniques", "testing practices", "automation"],
+    file: "modules/37-software-testing-principles-techniques-practices.md",
+  },
    {
     id: "test-design",
     title: "Test Design Techniques",
